@@ -32,6 +32,7 @@
     [self.tipControl setTitle:[SettingsHelper getLowerPercentText] forSegmentAtIndex:0];
     [self.tipControl setTitle:[SettingsHelper getMediumPercentText] forSegmentAtIndex:1];
     [self.tipControl setTitle:[SettingsHelper getHigherPercentText] forSegmentAtIndex:2];
+    [self updateValues:nil];
     
 }
 
@@ -66,7 +67,7 @@
 
 - (IBAction)updateValues:(id)sender {
     float billAmount = [self.billAmountField.text floatValue];
-    NSArray *tipValues = @[@([SettingsHelper getLowerPercentSetting]), @([SettingsHelper getMediumPercentSetting]), @([SettingsHelper getLowerPercentSetting])];
+    NSArray *tipValues = @[@([SettingsHelper getLowerPercentSetting]), @([SettingsHelper getMediumPercentSetting]), @([SettingsHelper getHigherPercentSetting])];
     float tip = ([tipValues[self.tipControl.selectedSegmentIndex] floatValue]/100)* billAmount;
     float total = billAmount + tip;
     
