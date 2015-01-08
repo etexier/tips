@@ -15,6 +15,7 @@
 		315E620A1A49488000A1CB0B /* TipsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 315E62091A49488000A1CB0B /* TipsTests.m */; };
 		315E62201A49524400A1CB0B /* TipViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 315E621E1A49524400A1CB0B /* TipViewController.m */; };
 		315E62211A49524400A1CB0B /* TipViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 315E621F1A49524400A1CB0B /* TipViewController.xib */; };
+		AA8EFE54DF5B5FA7BB6EFD4C /* SettingsHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = AA8EFAB737510104BF22A5C4 /* SettingsHelper.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +44,8 @@
 		315E621D1A49524400A1CB0B /* TipViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TipViewController.h; sourceTree = "<group>"; };
 		315E621E1A49524400A1CB0B /* TipViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TipViewController.m; sourceTree = "<group>"; };
 		315E621F1A49524400A1CB0B /* TipViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TipViewController.xib; sourceTree = "<group>"; };
+		31EC300D1A5E4EED00A7C5D8 /* SettingsHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SettingsHelper.h; sourceTree = "<group>"; };
+		AA8EFAB737510104BF22A5C4 /* SettingsHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsHelper.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +87,7 @@
 		315E61EC1A49488000A1CB0B /* Tips */ = {
 			isa = PBXGroup;
 			children = (
+				31EC300C1A5E4EB100A7C5D8 /* helpers */,
 				315E61F11A49488000A1CB0B /* AppDelegate.h */,
 				315E61F21A49488000A1CB0B /* AppDelegate.m */,
 				315E61FA1A49488000A1CB0B /* Images.xcassets */,
@@ -122,6 +126,15 @@
 				315E62081A49488000A1CB0B /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		31EC300C1A5E4EB100A7C5D8 /* helpers */ = {
+			isa = PBXGroup;
+			children = (
+				31EC300D1A5E4EED00A7C5D8 /* SettingsHelper.h */,
+				AA8EFAB737510104BF22A5C4 /* SettingsHelper.m */,
+			);
+			name = helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -228,6 +241,7 @@
 				315E62201A49524400A1CB0B /* TipViewController.m in Sources */,
 				315E61F01A49488000A1CB0B /* main.m in Sources */,
 				312F35EF1A4A03F2009D293A /* SettingsViewController.m in Sources */,
+				AA8EFE54DF5B5FA7BB6EFD4C /* SettingsHelper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

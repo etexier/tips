@@ -8,6 +8,7 @@
 
 #import "TipViewController.h"
 #import "SettingsViewController.h"
+#import "SettingsHelper.h"
 
 @interface TipViewController ()
 
@@ -26,6 +27,14 @@
     
 }
 
+- (void)viewDidAppear:(BOOL)animated {
+    NSLog(@"View did appear for TipViewController");
+    [self.tipControl setTitle:[SettingsHelper getLowerPercentText] forSegmentAtIndex:0];
+    [self.tipControl setTitle:[SettingsHelper getMediumPercentText] forSegmentAtIndex:1];
+    [self.tipControl setTitle:[SettingsHelper getHigherPercentText] forSegmentAtIndex:2];
+    
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.navigationItem.rightBarButtonItem =
@@ -33,7 +42,6 @@
                                      style:UIBarButtonItemStylePlain
                                     target:self
                                     action:@selector(onSettingsButton)];
-
 }
 
 - (void)onSettingsButton {
@@ -58,8 +66,8 @@
 
 - (IBAction)updateValues:(id)sender {
     float billAmount = [self.billAmountField.text floatValue];
-    NSArray *tipValues = @[@(0.15), @(0.18), @(0.2)];
-    float tip = [tipValues[self.tipControl.selectedSegmentIndex] floatValue]* billAmount;
+    NSArray *tipValues = @[@([SettingsHelper getLowerPercentSetting]), @([SettingsHelper getMediumPercentSetting]), @([SettingsHelper getLowerPercentSetting])];
+    float tip = ([tipValues[self.tipControl.selectedSegmentIndex] floatValue]/100)* billAmount;
     float total = billAmount + tip;
     
     self.tipLabel.text = [NSString stringWithFormat:@"$%.2f", tip];
