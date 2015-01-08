@@ -28,7 +28,7 @@
                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="10" minValue="0.0" maxValue="100" id="ClI-uN-ZwZ">
+                <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="10" minValue="0.0" maxValue="40" id="ClI-uN-ZwZ">
                     <rect key="frame" x="-44" y="233" width="214" height="31"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="minimumTrackTintColor" red="1" green="0.28395721408360231" blue="0.018118384900512763" alpha="1" colorSpace="calibratedRGB"/>
@@ -36,7 +36,7 @@
                         <action selector="lowerPercentSliderValueChanged:" destination="-1" eventType="valueChanged" id="1f7-jR-8MU"/>
                     </connections>
                 </slider>
-                <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="15" minValue="0.0" maxValue="100" id="XEP-Q0-G9M">
+                <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="15" minValue="0.0" maxValue="40" id="XEP-Q0-G9M">
                     <rect key="frame" x="47" y="233" width="214" height="31"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="minimumTrackTintColor" red="0.05802105003726743" green="0.32275715491183554" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -44,7 +44,7 @@
                         <action selector="mediumPercentSliderValueChanged:" destination="-1" eventType="valueChanged" id="pFq-Mu-zH9"/>
                     </connections>
                 </slider>
-                <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="20" minValue="0.0" maxValue="100" id="Bqs-Xq-XYh">
+                <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="20" minValue="0.0" maxValue="40" id="Bqs-Xq-XYh">
                     <rect key="frame" x="140" y="233" width="214" height="31"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="minimumTrackTintColor" red="0.048089940289386401" green="1" blue="0.076080697303213651" alpha="1" colorSpace="calibratedRGB"/>
